@@ -39,8 +39,14 @@ function VikeAuthHandler(prefix: string, authOptions: VikeAuthConfig) {
       .slice(prefix.length + 1)
       .split("/")[0] as AuthAction;
 
-    if (!actions.includes(action) || !url.pathname.startsWith(prefix + "/")) {
-      return;
+    if (!actions.includes(action)) {
+      throw new Error(`action ${action} is not supported`);
+    }
+
+    if (!url.pathname.startsWith(prefix + "/")) {
+      throw new Error(
+        `handler should only be configured for prefix: ${prefix}`
+      );
     }
 
     return await Auth(request, authOptions);
