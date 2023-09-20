@@ -1,6 +1,6 @@
 {
   "name": "vike-authjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "type": "module",
   "scripts": {
@@ -25,5 +25,6 @@
   },
   "files": [
     "dist/"
-  ]
+  ],
+  "repository": "github:magne4000/vike-authjs"
 }
