@@ -1,3 +1,5 @@
+// See https://github.com/nextauthjs/next-auth/blob/db8fcc3c82249a017c97c2cd05bc8426bb20cafd/packages/frameworks-solid-start/src/index.ts
+
 import { Auth } from "@auth/core";
 import type { AuthAction, AuthConfig, Session } from "@auth/core/types";
 
@@ -55,7 +57,6 @@ function VikeAuthHandler(prefix: string, authOptions: VikeAuthConfig) {
 
 export function VikeAuth(config: VikeAuthConfig) {
   const { prefix = "/api/auth", ...authOptions } = config;
-  import.meta;
   authOptions.secret ??= env.AUTH_SECRET;
   authOptions.trustHost ??= !!(
     env.AUTH_TRUST_HOST ??
