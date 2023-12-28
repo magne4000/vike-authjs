@@ -68,7 +68,7 @@ export function VikeAuth(config: VikeAuthConfig) {
 
 export async function getSession(
   req: Request,
-  options: AuthConfig
+  options: Omit<AuthConfig, "raw">
 ): Promise<Session | null> {
   options.secret ??= env.AUTH_SECRET;
   options.trustHost ??= true;
