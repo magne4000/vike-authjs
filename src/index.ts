@@ -7,7 +7,7 @@ export interface RouterContext {
   request: Request;
 }
 
-export interface VikeAuthConfig extends AuthConfig {
+export interface VikeAuthConfig extends Omit<AuthConfig, "raw"> {
   /**
    * Defines the base path for the auth routes.
    * @default '/api/auth'
