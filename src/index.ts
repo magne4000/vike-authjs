@@ -63,6 +63,7 @@ export function VikeAuth(config: VikeAuthConfig) {
     env.VERCEL ??
     env.NODE_ENV !== "production"
   );
+  authOptions.basePath ??= prefix;
   return VikeAuthHandler(prefix, authOptions);
 }
 
