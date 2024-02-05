@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@auth/core':
-    specifier: ^0.22.0
-    version: 0.22.0
+    specifier: ^0.25.1
+    version: 0.25.1
   '@types/node':
     specifier: ^18.19.8
     version: 18.19.8
@@ -20,8 +20,8 @@ devDependencies:
 
 packages:
 
-  /@auth/core@0.22.0:
-    resolution: {integrity: sha512-BwngPhtcEtJPV+sfs8pGPZ+RdKnpBeXRk2K2Os10DyMfaL/Vszj2TJU6sRaS38hXzo+xycYX+83olBElqc2Ngw==}
+  /@auth/core@0.25.1:
+    resolution: {integrity: sha512-Xt/0oV0ItS38BUeqc98LVYspoXSUifWS48BeEzWXkkdQgLcXEFnF008+CDLyZvnyv/zF4vahwJHeR/J5SK9RaA==}
     peerDependencies:
       nodemailer: ^6.8.0
     peerDependenciesMeta:
