@@ -10,10 +10,10 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@auth/core": "^0.28.2",
+    "@auth/core": "^0.29.0",
     "@types/node": "^18.19.8",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.5"
   },
   "peerDependencies": {
     "@auth/core": "*"
