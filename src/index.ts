@@ -1,7 +1,8 @@
 // See https://github.com/nextauthjs/next-auth/blob/db8fcc3c82249a017c97c2cd05bc8426bb20cafd/packages/frameworks-solid-start/src/index.ts
 
 import { Auth } from "@auth/core";
-import type { AuthAction, AuthConfig, Session } from "@auth/core/types";
+import type { AuthAction, Session } from "@auth/core/types";
+import type { AuthConfig } from "@auth/core";
 
 export interface RouterContext {
   request: Request;
