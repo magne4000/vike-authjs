@@ -10,9 +10,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@auth/core": "^0.31.0",
+    "@auth/core": "^0.32.0",
     "@types/node": "^18.19.8",
-    "tsup": "^8.0.2",
+    "tsup": "^8.1.0",
     "typescript": "^5.4.5"
   },
   "peerDependencies": {
